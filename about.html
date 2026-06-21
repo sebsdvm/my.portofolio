@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Sebastian - Web Developer & Student">
+    <title>About | Sebastian</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+<!-- TOP NAVBAR -->
+<div class="top-navbar" id="top-navbar">
+    <div class="navbar-left">
+        <div class="traffic-lights">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+        </div>
+        <div class="navbar-logo">
+            <span class="logo-icon">⌘</span>
+            <span class="logo-text">Sebastian</span>
+        </div>
+    </div>
+    
+    <div class="navbar-right">
+        <button class="menu-toggle-new" id="menu-toggle" aria-label="Open menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</div>
+
+<!-- SIDEBAR NAVIGATION -->
+<nav id="sidebar-nav" class="sidebar-nav-new">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <span class="logo-icon">⌘</span>
+            <span class="logo-text">Sebastian</span>
+        </div>
+        <button class="close-btn-new" id="close-btn" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <ul class="nav-links-new">
+        <li><a href="index.html" class="nav-item-new">Home</a></li>
+        <li><a href="about.html" class="nav-item-new">About</a></li>
+        <li><a href="projects.html" class="nav-item-new">Projects</a></li>
+        <li><a href="education.html" class="nav-item-new">Education</a></li>
+        <li><a href="index.html#contact" class="nav-item-new">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- OVERLAY -->
+<div id="sidebar-overlay" class="sidebar-overlay-new"></div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section" style="padding-top: 100px;">
+        <div class="section-header">
+            <span class="section-tag" data-aos="fade-up"> — About</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">About Me</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Siapa Saya dan Apa yang Saya Lakukan</p>
+        </div>
+        
+        <div class="about-grid">
+            <div class="about-image-side" data-aos="fade-right">
+                <div class="profile-picture-container">
+                    <img src="Assets/Tian.png" alt="Foto Profil Sebastian" class="profile-picture">
+                </div>
+            </div>
+
+            <div class="about-text-side" data-aos="fade-left">
+                <div class="about-text">
+                    <p>
+                        Hi! Nama saya adalah <strong class="text-primary">Sebastian</strong>, seorang pelajar yang memiliki ketertarikan besar di dunia teknologi, terutama di bidang pengembangan web front-end. Saya mulai belajar coding sejak tahun 2024 dan hingga sekarang terus mengembangkan kemampuan dalam menggunakan HTML, CSS, dan JavaScript untuk membuat tampilan website yang menarik dan interaktif. 
+                    </p>
+                    <p>
+                        Saat ini, saya sedang menempuh pendidikan di SMK Galajuara dengan Jurusan Teknologi Komputer dan Telekomunikasi, yang memberikan saya dasar kuat dalam logika pemrograman dan pemecahan masalah. Saya selalu antusias untuk belajar teknologi baru dan menciptakan solusi digital yang elegan dan efisien.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">Year+ Coding</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="6">0</div>                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% Passion</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sub-heading" data-aos="fade-up">Personal Info</h3>
+
+        <div class="personal-info">
+            <div class="info-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="info-icon-wrap">
+                    <i class="fas fa-user info-icon"></i>
+                </div>
+                <h3>Nama</h3>
+                <strong>Sebastian</strong>
+            </div>
+
+            <div class="info-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="info-icon-wrap">
+                    <i class="fas fa-map-marker-alt info-icon"></i>
+                </div>
+                <h3>Lokasi</h3>
+                <strong>Bekasi, Jawa Barat</strong>
+            </div>
+
+            <div class="info-box" data-aos="zoom-in" data-aos-delay="300">
+                <div class="info-icon-wrap">
+                    <i class="fas fa-envelope info-icon"></i>
+                </div>
+                <h3>Email</h3>
+                <strong>tianppubg09@gmail.com</strong>
+            </div>
+
+            <div class="info-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="info-icon-wrap">
+                    <i class="fas fa-phone-alt info-icon"></i>
+                </div>
+                <h3>Telepon</h3>
+                <strong>+62 812-1223-5565</strong>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  <!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Navigasi -->
+            <div class="footer-section">
+                <h3 class="footer-title">Navigasi</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Saya</a></li>
+                    <li><a href="projects.html">Proyek</a></li>
+                    <li><a href="education.html">Pendidikan</a></li>
+                </ul>
+            </div>
+
+            <!-- Kontak -->
+            <div class="footer-section">
+                <h3 class="footer-title">Kontak</h3>
+                <ul class="footer-contact">
+                    <li><a href="mailto:tianppubg09@gmail.com">tianppubg09@gmail.com</a></li>
+                    <li><a href="tel:+6281212235565">+62 812-1223-5565</a></li>
+                    <li>Bekasi, Jawa Barat</li>
+                    <li><a href="https://www.instagram.com/sebsdv1" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="footer-profile">
+            <div class="footer-logo">
+                <span class="code-icon">&lt;/&gt;</span>
+                <span class="footer-name">SEBASTIAN</span>
+            </div>
+            <p class="footer-bio">
+                Pelajar SMK dengan passion di bidang web development. 
+                Menciptakan solusi digital yang elegan dan efisien dari Bekasi.
+            </p>
+            <div class="footer-social">
+                <a href="https://github.com/sebsdvm" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/sebsdv1" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year-footer">2026</span> Sebastian. Semua hak dilindungi undang-undang.</p>
+        </div>
+    </div>
+</footer>
+</body></html>
