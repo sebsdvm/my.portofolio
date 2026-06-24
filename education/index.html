@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Education - Sebastian">
+    <title>Education | Sebastian</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+<!-- TOP NAVBAR -->
+<div class="top-navbar" id="top-navbar">
+    <div class="navbar-left">
+        <div class="traffic-lights">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+        </div>
+        <div class="navbar-logo">
+            <span class="logo-icon">⌘</span>
+            <span class="logo-text">Sebastian</span>
+        </div>
+    </div>
+    
+    <div class="navbar-right">
+        <button class="menu-toggle-new" id="menu-toggle" aria-label="Open menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</div>
+
+<!-- SIDEBAR NAVIGATION -->
+<nav id="sidebar-nav" class="sidebar-nav-new">
+    <div class="sidebar-header">
+        <div class="sidebar-logo">
+            <span class="logo-icon">⌘</span>
+            <span class="logo-text">Sebastian</span>
+        </div>
+        <button class="close-btn-new" id="close-btn" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <ul class="nav-links-new">
+<li><a href="/" class="nav-item-new">Home</a></li>
+<li><a href="/about/" class="nav-item-new">About</a></li>
+<li><a href="/projects/" class="nav-item-new">Projects</a></li>
+<li><a href="/education/" class="nav-item-new">Education</a></li>
+<li><a href="/#contact" class="nav-item-new">Contact</a></li>
+    </ul>
+</nav>
+<!-- OVERLAY -->
+<div id="sidebar-overlay" class="sidebar-overlay-new"></div>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="education-section-new">
+        <div class="container">
+            <div class="section-header-centered" data-aos="fade-up">
+<div class="section-header" data-aos="fade-up">
+    <span class="section-tag"> — Education</span>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Educational Background</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Riwayat Pendidikan Saya</p>
+</div>
+
+<!-- Education Cards Grid -->
+<div class="education-cards-grid">
+    <!-- Card 1 - SMK -->
+    <div class="education-card-project-style" data-aos="fade-up" data-aos-delay="200">
+        <div class="education-image-wrap">
+            <img src="/Assets/smk.jpeg" alt="SMK Galajuara" class="education-image">
+            <div class="education-overlay">
+                <span class="education-badge">Current</span>
+            </div>
+        </div>
+        <div class="education-content">
+            <h3>Teknologi Komputer dan Telekomunikasi</h3>
+            <p class="education-school-name">SMK Galajuara</p>
+            <p class="education-desc">Fokus mempelajari jaringan komputer, pemrograman, dan teknologi telekomunikasi modern.</p>
+            <div class="education-year">2024 - Sekarang</div>
+        </div>
+    </div>
+
+    <!-- Card 2 - SMP -->
+    <div class="education-card-project-style" data-aos="fade-up" data-aos-delay="300">
+        <div class="education-image-wrap">
+            <img src="/Assets/smp.jpeg" alt="SMPN 19 Bekasi" class="education-image">
+        </div>
+        <div class="education-content">
+            <h3>Pendidikan Menengah Pertama</h3>
+            <p class="education-school-name">SMPN 19 Bekasi</p>
+            <p class="education-desc">Membangun dasar pengetahuan umum dan mulai mengenal teknologi serta komputer.</p>
+            <div class="education-year">2021 - 2024</div>
+        </div>
+    </div>
+
+    <!-- Card 3 - SD -->
+    <div class="education-card-project-style" data-aos="fade-up" data-aos-delay="400">
+        <div class="education-image-wrap">
+            <img src="/Assets/sd.jpeg" alt="SD Santo Yusuf" class="education-image">
+        </div>
+        <div class="education-content">
+            <h3>Pendidikan Dasar</h3>
+            <p class="education-school-name">SD Santo Yusuf</p>
+            <p class="education-desc">Pendidikan dasar dengan fokus pada pembentukan karakter dan pengetahuan fundamental.</p>
+            <div class="education-year">2015 - 2021</div>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script.js"></script>
+  <!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Navigasi -->
+            <div class="footer-section">
+                <h3 class="footer-title">Navigasi</h3>
+                <ul class="footer-links">
+<li><a href="/">Beranda</a></li>
+<li><a href="/about/">Tentang Saya</a></li>
+<li><a href="/projects/">Proyek</a></li>
+<li><a href="/education/">Pendidikan</a></li>
+                </ul>
+            </div>
+
+            <!-- Kontak -->
+            <div class="footer-section">
+                <h3 class="footer-title">Kontak</h3>
+                <ul class="footer-contact">
+                    <li><a href="mailto:tianppubg09@gmail.com">tianppubg09@gmail.com</a></li>
+                    <li><a href="tel:+6281212235565">+62 812-1223-5565</a></li>
+                    <li>Bekasi, Jawa Barat</li>
+                    <li><a href="https://www.instagram.com/sebsdv1" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="footer-profile">
+            <div class="footer-logo">
+                <span class="code-icon">&lt;/&gt;</span>
+                <span class="footer-name">SEBASTIAN</span>
+            </div>
+            <p class="footer-bio">
+                Pelajar SMK dengan passion di bidang web development. 
+                Menciptakan solusi digital yang elegan dan efisien dari Bekasi.
+            </p>
+            <div class="footer-social">
+                <a href="https://github.com/sebsdvm" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/sebsdv1" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year-footer">2026</span> Sebastian. Semua hak dilindungi undang-undang.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
