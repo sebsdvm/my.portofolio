@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
     
     <link rel="stylesheet" href="style.css">
@@ -37,12 +37,19 @@
             <span class="dot-yellow"></span>
             <span class="dot-green"></span>
         </div>
-        <div class="navbar-logo">
-            <span class="logo-icon">⌘</span>
+        <a href="/" class="navbar-logo">
+            <span class="logo-icon"><svg class="" width="20" height="20" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><line x1="24" y1="4" x2="24" y2="18" transform="rotate(0 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(30 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(60 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(90 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(120 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(150 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(180 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(210 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(240 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(270 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(300 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(330 24 24)"/></svg></span>
             <span class="logo-text">Sebastian</span>
-        </div>
+        </a>
     </div>
-    
+
+    <div class="navbar-tabs" role="navigation" aria-label="Halaman">
+        <a href="/" data-tab="home">Home</a>
+        <a href="/about/" data-tab="about">About</a>
+        <a href="/projects/" data-tab="projects">Projects</a>
+        <a href="/education/" data-tab="education">Education</a>
+    </div>
+
     <div class="navbar-right">
         <button class="menu-toggle-new" id="menu-toggle" aria-label="Open menu">
             <span class="hamburger-line"></span>
@@ -53,23 +60,57 @@
 </div>
 
 <!-- SIDEBAR NAVIGATION -->
-<nav id="sidebar-nav" class="sidebar-nav-new">
+<nav id="sidebar-nav" class="sidebar-nav-new" aria-label="Menu utama">
     <div class="sidebar-header">
-        <div class="sidebar-logo">
-            <span class="logo-icon">⌘</span>
-            <span class="logo-text">Sebastian</span>
+        <div class="sidebar-brand">
+            <div class="traffic-lights">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+            </div>
+            <div class="sidebar-logo">
+                <span class="logo-icon"><svg class="" width="20" height="20" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" aria-hidden="true"><line x1="24" y1="4" x2="24" y2="18" transform="rotate(0 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(30 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(60 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(90 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(120 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(150 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(180 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(210 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(240 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(270 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(300 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(330 24 24)"/></svg></span>
+                <span class="logo-text">Sebastian</span>
+            </div>
         </div>
         <button class="close-btn-new" id="close-btn" aria-label="Close menu">
             <i class="fa-solid fa-xmark"></i>
         </button>
     </div>
-    <ul class="nav-links-new">
-<li><a href="/" class="nav-item-new">Home</a></li>
-<li><a href="/about/" class="nav-item-new">About</a></li>
-<li><a href="/projects/" class="nav-item-new">Projects</a></li>
-<li><a href="/education/" class="nav-item-new">Education</a></li>
-<li><a href="/#contact" class="nav-item-new">Contact</a></li>
-    </ul>
+
+    <label class="sidebar-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="sidebar-search-input" placeholder="Cari halaman" autocomplete="off">
+        <kbd>VII</kbd>
+    </label>
+
+    <a href="/#contact" class="sidebar-cta">
+        <i class="fa-solid fa-plus"></i>
+        <span>Hubungi saya</span>
+    </a>
+
+    <div class="sidebar-scroll">
+        <p class="sidebar-group-label">Menu</p>
+        <ul class="nav-links-new">
+            <li><a href="/" class="nav-item-new" data-tab="home"><i class="fa-solid fa-house"></i><span>Home</span><b class="nav-ring"></b></a></li>
+            <li><a href="/about/" class="nav-item-new" data-tab="about"><i class="fa-regular fa-user"></i><span>About</span><b class="nav-ring"></b></a></li>
+            <li><a href="/projects/" class="nav-item-new" data-tab="projects"><i class="fa-solid fa-code"></i><span>Projects</span><b class="nav-ring"></b></a></li>
+            <li><a href="/education/" class="nav-item-new" data-tab="education"><i class="fa-solid fa-graduation-cap"></i><span>Education</span><b class="nav-ring"></b></a></li>
+            <li><a href="/#contact" class="nav-item-new" data-tab="contact"><i class="fa-regular fa-envelope"></i><span>Contact</span><b class="nav-ring"></b></a></li>
+        </ul>
+
+        <p class="sidebar-group-label">Sosial</p>
+        <ul class="sidebar-social-list">
+            <li><a href="https://github.com/sebsdvm" target="_blank" rel="noopener"><span class="soc-icon"><i class="fa-brands fa-github"></i></span><span>GitHub</span><i class="fa-solid fa-arrow-up-right-from-square soc-out"></i></a></li>
+            <li><a href="https://www.instagram.com/sebsdv1" target="_blank" rel="noopener"><span class="soc-icon"><i class="fa-brands fa-instagram"></i></span><span>Instagram</span><i class="fa-solid fa-arrow-up-right-from-square soc-out"></i></a></li>
+            <li><a href="mailto:tianppubg09@gmail.com"><span class="soc-icon"><i class="fa-solid fa-envelope"></i></span><span>Email</span><i class="fa-solid fa-arrow-up-right-from-square soc-out"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-foot">
+        <span class="status-dot"></span>
+        <span>Active · Bekasi, Jawa Barat</span>
+    </div>
 </nav>
 
 <!-- OVERLAY -->
@@ -78,6 +119,7 @@
     <!-- HEADER / HERO SECTION -->
     <header id="home">
         <span class="header-tag" data-aos="fade-up" data-aos-delay="200">
+            <svg class="hero-burst" width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><line x1="24" y1="4" x2="24" y2="18" transform="rotate(0 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(30 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(60 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(90 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(120 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(150 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(180 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(210 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(240 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(270 24 24)"/><line x1="24" y1="4" x2="24" y2="18" transform="rotate(300 24 24)"/><line x1="24" y1="4" x2="24" y2="20" transform="rotate(330 24 24)"/></svg>
         </span>
 
         <h1 data-aos="fade-up" data-aos-delay="300">
@@ -140,7 +182,7 @@
 
             <div class="about-preview-card" data-aos="fade-up" data-aos-delay="200">
                 <p class="about-preview-text">
-                    Pelajar SMK dengan ketertarikan besar di dunia teknologi, terutama pengembangan web front-end. Tertarik pada dunia pengembangan web dan senang membangun website yang modern, responsif, dan mudah digunakan.
+                    Hi! Saya Sebastian siswa dari SMK Galajuara yang mempunyai ketertarikan di bidang Coding dan Programing. Saya belajar coding mulai dari tahun 2024. bermodalkan belajar dari YouTube dan dengan bantuan AI, sekarang saya sudah bisa membuat website frontend dengan kualitas standar.
                 </p>
                 <div class="about-preview-meta">
                     <span class="location">
@@ -193,8 +235,8 @@
     <section id="skills" class="skills-section">
         <div class="container">
             <div class="section-header-centered" data-aos="fade-up">
-                <h2 class="section-title-main">// tech stack</h2>
-                <h1 class="section-big-title">Keahlian Teknis</h1>
+                <h2 class="section-title-main">// tools used</h2>
+                <h1 class="section-big-title">Tools</h1>
             </div>
             
             <div class="skills-container-grid"> 
@@ -202,7 +244,7 @@
                     <i class="fa-brands fa-html5 skill-icon html-icon"></i>
                     <span class="skill-name">HTML</span>
                     <div class="skill-progress">
-                        <div class="skill-progress-bar" style="--progress: 90%"></div>
+                        <div class="skill-progress-bar" style="--progress: 100%"></div>
                     </div>
                 </div>
                 <div class="skill-card" data-aos="zoom-in" data-aos-delay="100" data-skill="CSS" data-level="85">
@@ -218,13 +260,6 @@
                         <div class="skill-progress-bar" style="--progress: 75%"></div>
                     </div>
                 </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200" data-skill="ReactJS" data-level="60">
-                    <i class="fa-brands fa-react skill-icon react-icon"></i>
-                    <span class="skill-name">ReactJS</span>
-                    <div class="skill-progress">
-                        <div class="skill-progress-bar" style="--progress: 60%"></div>
-                    </div>
-                </div>
                 <div class="skill-card" data-aos="zoom-in" data-aos-delay="250" data-skill="Python" data-level="70">
                     <i class="fa-brands fa-python skill-icon python-icon"></i>
                     <span class="skill-name">Python</span>
@@ -232,11 +267,32 @@
                         <div class="skill-progress-bar" style="--progress: 70%"></div>
                     </div>
                 </div>
-                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300" data-skill="Node.js" data-level="65">
-                    <i class="fa-brands fa-node-js skill-icon node-icon"></i>
-                    <span class="skill-name">Node.js</span>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300" data-skill="Claude AI" data-level="85">
+                    <img class="skill-img " src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt="Claude AI" loading="lazy" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'skill-img-fallback',textContent:'C'}))">
+                    <span class="skill-name">Claude AI</span>
                     <div class="skill-progress">
-                        <div class="skill-progress-bar" style="--progress: 65%"></div>
+                        <div class="skill-progress-bar" style="--progress: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="350" data-skill="Qwen AI" data-level="80">
+                    <img class="skill-img " src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/qwen-color.svg" alt="Qwen AI" loading="lazy" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'skill-img-fallback',textContent:'Q'}))">
+                    <span class="skill-name">Qwen AI</span>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400" data-skill="VS Code" data-level="80">
+                    <img class="skill-img " src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'skill-img-fallback',textContent:'V'}))">
+                    <span class="skill-name">VS Code</span>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500" data-skill="GitHub" data-level="75">
+                    <img class="skill-img " src="https://cdn.simpleicons.org/github/white" alt="GitHub" loading="lazy" onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{className:'skill-img-fallback',textContent:'G'}))">
+                    <span class="skill-name">GitHub</span>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="--progress: 75%"></div>
                     </div>
                 </div>
             </div>
@@ -257,7 +313,7 @@
                     <h3 class="contact-card-title">Let's work together!</h3>
                     <p class="contact-card-desc">I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, feel free to reach out!</p>
                                         <div class="connect-links">
-                        <a href="#" target="_blank" class="connect-item magnetic" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://www.linkedin.com/in/sebastian-garva-uneputty-a3863141a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="connect-item magnetic" data-aos="fade-up" data-aos-delay="100">
                             <div class="connect-icon-wrap linkedin">
                                 <i class="fab fa-linkedin icon-linkedin"></i>
                             </div>
@@ -326,6 +382,37 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+<script>
+(function () {
+  var path = location.pathname.replace(/index\.html$/, '');
+  var key = 'home';
+  if (/^\/about/.test(path)) key = 'about';
+  else if (/^\/projects/.test(path)) key = 'projects';
+  else if (/^\/education/.test(path)) key = 'education';
+  document.querySelectorAll('[data-tab="' + key + '"]').forEach(function (el) {
+    if (el.classList.contains('nav-item-new') || el.closest('.navbar-tabs')) el.classList.add('active');
+  });
+  var input = document.getElementById('sidebar-search-input');
+  if (input) {
+    input.addEventListener('input', function () {
+      var q = input.value.trim().toLowerCase();
+      document.querySelectorAll('.nav-links-new li').forEach(function (li) {
+        li.style.display = li.textContent.toLowerCase().indexOf(q) === -1 ? 'none' : '';
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        var t = document.getElementById('menu-toggle');
+        var nav = document.getElementById('sidebar-nav');
+        if (nav && !nav.classList.contains('active') && t) t.click();
+        setTimeout(function () { input.focus(); }, 120);
+      }
+    });
+  }
+})();
+</script>
+
   <!-- FOOTER -->
 <footer class="site-footer">
     <div class="footer-container">
@@ -360,8 +447,7 @@
                 <span class="footer-name">SEBASTIAN</span>
             </div>
             <p class="footer-bio">
-                Pelajar SMK dengan passion di bidang web development. 
-                Menciptakan solusi digital yang elegan dan efisien dari Bekasi.
+                Pelajar SMK yang fokus mengembangkan skill front-end development dan menciptakan website yang menarik serta interaktif.
             </p>
             <div class="footer-social">
                 <a href="https://github.com/sebsdvm" target="_blank" aria-label="GitHub">
@@ -380,4 +466,4 @@
     </div>
 </footer>
 </body>
-      </html>
+</html>
